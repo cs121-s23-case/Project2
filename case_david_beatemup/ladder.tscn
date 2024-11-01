@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://pwo8kpna6u30"]
+
+[ext_resource type="Script" path="res://ladder.gd" id="1_oxsfe"]
+[ext_resource type="Texture2D" uid="uid://brxl507phfjks" path="res://prototyping_assets/item/tile_0071.png" id="2_4wkit"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qo53t"]
+size = Vector2(49, 455)
+
+[node name="Ladder" type="Area2D"]
+script = ExtResource("1_oxsfe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(348.5, 317.5)
+shape = SubResource("RectangleShape2D_qo53t")
+
+[node name="Tile0071" type="Sprite2D" parent="."]
+position = Vector2(349, 517.5)
+scale = Vector2(3, 3.16667)
+texture = ExtResource("2_4wkit")
+
+[node name="Tile0072" type="Sprite2D" parent="."]
+position = Vector2(351, 461)
+scale = Vector2(3, 3.16667)
+texture = ExtResource("2_4wkit")
+
+[node name="Tile0073" type="Sprite2D" parent="."]
+position = Vector2(349, 404)
+scale = Vector2(3, 3.16667)
+texture = ExtResource("2_4wkit")
+
+[node name="Tile0074" type="Sprite2D" parent="."]
+position = Vector2(352, 347)
+scale = Vector2(3, 3.16667)
+texture = ExtResource("2_4wkit")
+
+[node name="Tile0075" type="Sprite2D" parent="."]
+position = Vector2(349, 290)
+scale = Vector2(3, 3.16667)
+texture = ExtResource("2_4wkit")
+
+[node name="Tile0076" type="Sprite2D" parent="."]
+position = Vector2(352, 233)
+scale = Vector2(3, 3.16667)
+texture = ExtResource("2_4wkit")
+
+[node name="Tile0077" type="Sprite2D" parent="."]
+position = Vector2(350, 176)
+scale = Vector2(3, 3.16667)
+texture = ExtResource("2_4wkit")
+
+[node name="Tile0078" type="Sprite2D" parent="."]
+position = Vector2(353, 119)
+scale = Vector2(3, 3.16667)
+texture = ExtResource("2_4wkit")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

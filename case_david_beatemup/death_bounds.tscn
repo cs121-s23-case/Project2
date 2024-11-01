@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://wnu4n0wemb4r"]
+
+[ext_resource type="Script" path="res://death_bounds.gd" id="1_db5fb"]
+
+[node name="DeathBounds" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_db5fb")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
