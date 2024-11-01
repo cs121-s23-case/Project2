@@ -9,5 +9,5 @@ func on_Quit_Game_pressed() -> void:
 	get_tree().quit()
 	
 func _process(delta):
-	if Input.is_action_just_pressed("escape"):
+	if Input.is_action_just_pressed("Escape"):
 		get_tree().quit()

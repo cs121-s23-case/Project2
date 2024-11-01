@@ -133,3 +133,4 @@ stream = ExtResource("8_xnu0c")
 [node name="bgm" type="AudioStreamPlayer2D" parent="sfx"]
 stream = ExtResource("9_spdkt")
 autoplay = true
+max_distance = 10000.0
